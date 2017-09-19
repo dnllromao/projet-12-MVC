@@ -1,0 +1,17 @@
+.question-group > .question {
+	margin-bottom: 0.8rem;
+	font-weight: 500;
+}
+
+.question-group > .answer {
+	margin-bottom: 2rem;
+}
+
+.question-group > .answer > * {
+	margin-bottom: 0.5rem;
+}
+
+.question-group > .answer ul {
+	padding-left: 2rem;
+}
+

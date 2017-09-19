@@ -16,20 +16,20 @@ class Router {
 		// $post = \Model\Model::getInstance()->find($slug);
 		//var_dump($post);
 
+		if(file_exists("views/parts/$slug.php")) {
+			ob_start();
+			require "views/parts/$slug.php";
+			$content = ob_get_clean();
+			require 'views/template.php';
+		} else {
+			$this->notFound();
+		}
 		
-		switch ($slug) {
-		 	case 'interview':
-		 		ob_start();
-		 		require "views/parts/$slug.php";
-		 		$content = ob_get_clean();
-		 		require 'views/template.php';
-		 		break;
-		 	
-		 	default:
-		 		require 'views/default.php';
-		 		break;
-		} 
-		
+	}
+
+	private function notFound() {
+		header('HTTP/1.0 404 Not Found');
+		die('Page introuvable');
 	}
 }
 
