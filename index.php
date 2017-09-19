@@ -10,15 +10,12 @@ spl_autoload_register('autoloader');
 // New Class
 $router = new \Controller\Router();
 
-$page  = (isset($_GET['p']))? $_GET['p']: 'home';
+$page  = (isset($_GET['p']))? $_GET['p']: '';
 
-switch ($page) {
-	case 'home':
-		$router->index();
-		break;
-	
-	default:
-		$router->page($page);
-		break;
+if(!empty($page)) {
+	$router->page($page);
+} else {
+	$router->index();
 }
+
 

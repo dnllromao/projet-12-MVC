@@ -5,13 +5,31 @@ namespace Controller;
 class Router {
 	
 	public function index() {
-		require 'views/home.php';
+		ob_start();
+		require 'views/parts/home.php';
+		$content = ob_get_clean();
+		require 'views/template.php';
 	}
 
 	public function page($slug) {
 		$title = ucfirst(str_replace('-', ' ', $slug));
-		$post = \Model\Model::getInstance()->find($slug);
+		// $post = \Model\Model::getInstance()->find($slug);
 		//var_dump($post);
-		require 'views/default.php';
+
+		
+		switch ($slug) {
+		 	case 'interview':
+		 		ob_start();
+		 		require "views/parts/$slug.php";
+		 		$content = ob_get_clean();
+		 		require 'views/template.php';
+		 		break;
+		 	
+		 	default:
+		 		require 'views/default.php';
+		 		break;
+		} 
+		
 	}
 }
+
