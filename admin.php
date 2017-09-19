@@ -8,8 +8,7 @@ function autoloader($class) {
 spl_autoload_register('autoloader');
 
 // New Class
-$router = new \Controller\Router();
-
+$router = new \Controller\Admin\Router();
 $page  = (isset($_GET['p']))? $_GET['p']: 'home';
 
 switch ($page) {
@@ -18,7 +17,6 @@ switch ($page) {
 		break;
 	
 	default:
-		$router->page($page);
+		//$router->page($page);
 		break;
 }
-
