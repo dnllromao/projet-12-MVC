@@ -2,7 +2,7 @@
 	<section class="banner style1 orient-left content-align-left image-position-right fullscreen onload-image-fade-in onload-content-fade-right">
 		<div class="content">
 			<h1>MVC avec Pierre Stoffe</h1>
-			<p class="major">Nos rêvont d'être web developpeurs, mais quelle est la réalité de ce métier aujourd'hui?</p>
+			<p class="major">Nous rêvont d'être web developpeurs, mais quelle est la réalité de ce métier aujourd'hui?</p>
 			<ul class="actions vertical">
 				<li><a href="#first" class="button big wide smooth-scroll-middle">Get Started</a></li>
 			</ul>
@@ -44,7 +44,7 @@
 	<section class="spotlight style1 orient-right content-align-left image-position-center onscroll-image-fade-in">
 		<div class="content">
 			<h2>Présentation</h2>
-			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi id ante sed ex pharetra lacinia sit amet vel massa. Donec facilisis laoreet nulla eu bibendum. Donec ut ex risus. Fusce lorem lectus, pharetra pretium massa et, hendrerit vestibulum odio lorem ipsum dolor sit amet.</p>
+			<p><strong>Pierre Stoffe</strong>, son parcours et expérience professionnelle.</p>
 			<ul class="actions vertical">
 				<li><a href="?p=presentation" class="button">Learn More</a></li>
 			</ul>

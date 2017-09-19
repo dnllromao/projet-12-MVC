@@ -2,7 +2,7 @@
 	<section class="banner style1 orient-left content-align-left image-position-right fullscreen onload-image-fade-in onload-content-fade-right">
 		<div class="content">
 			<h1>Présentation</h1>
-			<p class="major">Pierre Stoffe, son parcours et expérience professionnelle</p>
+			<p class="major"><strong>Pierre Stoffe</strong>, son parcours et expérience professionnelle.</p>
 			<ul class="actions vertical">
 				<li><a href="#first" class="button big wide smooth-scroll-middle">Get Started</a></li>
 			</ul>
