@@ -6,7 +6,7 @@ class Router {
 	
 	public function index() {
 		ob_start();
-		require 'views/parts/home.php';
+		require 'views/parts/admin/home.php';
 		$content = ob_get_clean();
 		require 'views/template.php';
 	}

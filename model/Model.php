@@ -9,7 +9,7 @@ class Model {
 	private $_db_host = 'localhost';
 	private $_db_name = 'mvc';
 	private $_db_user = 'root';
-	private $_db_pass = 'root';
+	private $_db_pass = '';
 	private $_db;
 
 	private static $_instance;
